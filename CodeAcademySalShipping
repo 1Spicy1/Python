@@ -1,0 +1,59 @@
+#Ground Shipping
+
+#Weight of Package	Price per Pound	Flat Charge
+#2 lb or less	$1.50	$20.00
+#Over 2 lb but less than or equal to 6 lb	$3.00	$20.00
+#Over 6 lb but less than or equal to 10 lb	$4.00	$20.00
+#Over 10 lb	$4.75	$20.00
+
+#Ground Shipping Premium
+
+#Flat charge: $125.00
+
+#Drone Shipping
+
+#Weight of Package	Price per Pound	Flat Charge
+#2 lb or less	$4.50	$0.00
+#Over 2 lb but less than or equal to 6 lb	$9.00	$0.00
+#Over 6 lb but less than or equal to 10 lb	$12.00	$0.00
+#Over 10 lb	$14.25	$0.00
+
+#Ask user the weight of their package and then tells them which method of shipping is cheapest and how much it'll cost ot ship their package.
+
+###############################################################################################################################################
+
+weight = 41.5
+premium_shipping = 125
+
+#Ground Shipping
+if weight <= 2:
+  print('Ground shipping would cost '+ "$" + str(round(1.5 * weight + 20,2)) + " for your package weight of " + str(weight) + ".")
+
+elif weight >2 and weight <= 6:
+  print('Ground shipping would cost '+ "$" + str(round(3 * weight + 20,2)) + " for your package weight of " + str(weight) + ".")
+
+elif weight >6 and weight <= 10:
+  print('Ground shipping would cost '+ "$" + str(round(4 * weight + 20)) + " for your package weight of " + str(weight) + ".")
+
+else: print('Ground shipping would cost '+ "$" + str(round(4.75 * weight + 20)) + " for your package weight of " + str(weight) + ".")
+
+print()
+
+#Premium Ground Shipping
+print("Reminder that premium ground shipping costs $125.")
+
+print()
+
+#Drone Shipping
+if weight <= 2:
+  print('Drone^TM shipping would cost '+ "$" + str(round(4.5 * weight + 0,2)) + " for your package weight of " + str(weight) + ".")
+
+elif weight >2 and weight <= 6:
+  print('Drone^TM shipping would cost '+ "$" + str(round(9 * weight + 0,2)) + " for your package weight of " + str(weight) + ".")
+
+elif weight >6 and weight <= 10:
+  print('Drone^TM shipping would cost '+ "$" + str(round(12 * weight + 0,2)) + " for your package weight of " + str(weight) + ".")
+
+else: print('Drone^TM shipping would cost '+ "$" + str(round(14.25 * weight + 0,2)) + " for your package weight of " + str(weight) + ".")
+
+print()
